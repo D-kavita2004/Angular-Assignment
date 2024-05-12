@@ -1,0 +1,20 @@
+<div class="main">
+   <form>
+       <input placeholder="Enter Country........" id="country" #searchCountry><br>
+       <input placeholder="Enter City........" id="city" #searchCity><br>
+       <button type="button" id="btn" class="btn btn-search" (click)="onSearch(searchCountry,searchCity)" >Submit</button>
+       <button type="reset" id="btn1" class="btn btn-search">Reset</button>
+   </form>
+   <br>
+
+   <div>
+       <p><u> POPULATION:</u> {{population}}</p>
+       <p><u> CURRENCY:</u>  {{currency}}</p>
+       <p><u> CAPITAL:</u> {{capital}}</p>
+       <p><u> LOCATION</u></p>
+       <ul>
+          <li><p><u> LATITUDE:</u> {{lat}}</p></li> 
+           <li><p><u> LONGITUDE:</u> {{long}}</p></li>
+       </ul>
+</div>   
+</div>
